@@ -1,1 +1,5 @@
-{{ template "theme/_default/list.html" . }}
+{{ if eq .Site.Params.home "single" }}
+  {{ template "theme/_default/single.html" . }}
+{{ else }}
+  {{ template "theme/_default/list.html" . }}
+{{ end }}
