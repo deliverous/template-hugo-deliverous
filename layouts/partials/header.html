@@ -13,14 +13,21 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="http://deliverous.com/hosting"><span class="fa fa-cloud"></span> Hébergement</a></li>
+            {{ range .Site.Menus.left }}
+            <li><a href="{{.URL}}"><i class="fa {{.Pre}}"></i> {{.Name}}</a></li>
+            {{ end }}
+            <li><a href="/hosting/"><span class="fa fa-cloud"></span> Hébergement</a></li>
             <li><a href="/service/"><span class="fa fa-graduation-cap"></span> Service</a></li>
             <li><a href="http://deliverous.com/team"><span class="fa fa-group"></span> Équipe</a></li>
+          </ul>
+          <ul class="nav navbar-nav pull-right">
+            {{ range .Site.Menus.right }}
+            <li><a href="{{.URL}}"><i class="fa {{.Pre}}"></i> {{.Name}}</a></li>
+            {{ end }}
             <li><a href="https://github.com/Deliverous"><i class="fa fa-github"></i> GitHub</a></li>
             <li><a href="https://twitter.com/DeliverousCom"><i class="fa fa-twitter"></i> Twitter</a></li>
             <li><a href="mailto://contact@deliverous.com"><i class="fa fa-envelope"></i> Contact</a></li>
-            <li><a href="/index.xml"><i class="fa fa-rss"></i> RSS</a></li>
-            <li><a href="/tags/"><i class="fa fa-tag"></i> Tags</a></li>
+            <li><a href="/manager/"><i class="fa fa-user"></i> Login</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
