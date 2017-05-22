@@ -321,3 +321,10 @@ code {
   margin-bottom: 1em;
 }
 
+/* Formation */
+.icon {
+  font-size: 50px;
+  text-align: center;
+  color: #848484;
+}
+
