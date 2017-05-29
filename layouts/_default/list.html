@@ -12,9 +12,9 @@
           {{end}}
               <div class='col-md-4'>
                 <article class='subblock'>
-                  <a href="{{ .Permalink }}"><img src="{{ .Permalink }}/illustration__thumbnail-square.jpg" class="img-responsive"/></a>
+                  <a href="{{ .RelPermalink }}"><img src="{{ .RelPermalink }}/illustration__thumbnail-square.jpg" class="img-responsive"/></a>
 
-                  <h2><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+                  <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
                   <div class="summary">
                     {{ .Description | markdownify }}
                   </div>
