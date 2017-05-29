@@ -1,5 +1,4 @@
-
-{{ if eq .Site.Params.Home "index" }}
+{{ if eq .Site.Params.home "single" }}
   {{ range where .Data.Pages "Title" "index" }}
     {{ template "theme/_default/single.html" . }}
   {{ end }}
