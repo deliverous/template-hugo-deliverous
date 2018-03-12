@@ -9,7 +9,7 @@
   {{ end }}
 
   <link rel="canonical" href="{{ .RelPermalink }}">
-  
+
   {{ with .Site.Params.author }}
     <meta name="author" content="{{ . }}">
   {{ end }}
@@ -17,10 +17,10 @@
   {{ with .Site.Title }}<meta property="og:title" content="{{ . }}">{{ end }}
   {{ with .Site.Params.logo }}<meta property="og:image" content="{{ $.Site.BaseURL }}{{ . }}">{{ end }}
 
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
-  <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css"/>
-  <link href="/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css"/>
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" type="text/css"/>
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
 
   {{ if .RSSLink }}
     <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
